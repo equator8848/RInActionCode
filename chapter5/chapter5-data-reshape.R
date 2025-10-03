@@ -5,8 +5,6 @@ t(cars)
 
 # 宽表：每一行代表唯一的观测值，大部分R函数使用宽表格式的数据框
 # 长表：每一行代表唯一的测量值。
-# tidyr 这个包可以进行宽表转长表转换
-
 data_wide <- data.frame(
   ID = c("FR", "BE", "GER"),
   Country = c("France", "Belgium", "Germany"),
@@ -17,6 +15,8 @@ data_wide <- data.frame(
 
 data_wide
 
-data_long <- tidyr::gather(data_wide,key = "LifeExpectancyYearVal",value = "Life_Exp",
+# tidyr 这个包可以进行宽表转长表转换
+data_long <- tidyr::gather(data_wide,key = "LifeExpectancyYearVal",
+                           value = "Life_Exp",
               c("LExp1990","LExp2000","LExp2010"))
 data_long

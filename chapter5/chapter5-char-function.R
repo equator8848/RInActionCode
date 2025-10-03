@@ -3,14 +3,17 @@ nchar("xiami")
 
 nchar("虾米")
 
-# 提取或者替换字符串
 mystr <- "bioxiami"
 
-# 提取，原变量不变
+# 提取字符串，原变量不变
 substr(mystr, 1, 3)
 
-# 替换，在原变量上修改
-substr(mystr, 1, 3) <- "rlang"
+mystr
+
+# 替换字符串，在原变量上修改
+substr(mystr, 1, 3) <- "BIO"
+
+mystr
 
 # 连接字符串paste(..., sep="xxx")，分隔符sep默认是空格
 paste("x", "y", "z")

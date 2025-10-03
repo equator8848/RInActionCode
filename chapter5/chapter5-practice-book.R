@@ -37,5 +37,6 @@ LastName <- sapply(name, "[", 2)
 # 合并拆分后的名字列并删除原本的列
 cbind(FirstName, LastName, roster[-1])
 
-# 排序（order() 函数是R语言中用于对向量进行排序并返回排序后元素在原向量中索引位置的函数）
+# 排序
+# order函数是R语言中用于对向量进行排序并返回排序后元素在原向量中索引位置的函数
 roster[order(LastName,FirstName),]

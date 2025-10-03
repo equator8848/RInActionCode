@@ -6,3 +6,7 @@ runif(6)
 set.seed(561)
 
 runif(6)
+
+# 每次运行随机的函数之前，都需要运行一下
+set.seed(561)
+runif(6)
